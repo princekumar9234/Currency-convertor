@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Advanced 3D Currency Converter with real-time exchange rates. Convert any currency instantly with a futuristic interface." />
+    <meta
+      name="description"
+      content="Advanced 3D Currency Converter with real-time exchange rates. Convert any currency instantly with a futuristic interface."
+    />
     <title>3D Currency Converter - Futuristic Financial Tool</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1086/1086741.png"
+      type="image/x-icon"
+    />
     <link href="style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -29,40 +36,51 @@
         <form id="converter-form">
           <div class="amount">
             <p>Amount To Convert</p>
-            <input id="amount-input" value="1" type="number" min="1" step="any" placeholder="0.00" />
+            <input
+              id="amount-input"
+              value="1"
+              type="number"
+              min="1"
+              step="any"
+              placeholder="0.00"
+            />
           </div>
-          
+
           <div class="dropdown">
             <div class="dropdown-item from">
               <p>From</p>
               <div class="select-container">
-                <img src="https://flagsapi.com/US/flat/64.png" alt="From country flag" />
+                <img
+                  src="https://flagsapi.com/US/flat/64.png"
+                  alt="From country flag"
+                />
                 <select name="from" id="from-currency"></select>
               </div>
             </div>
-            
+
             <div class="exchange-icon" id="swap-btn" title="Swap currencies">
               <i class="fa-solid fa-arrow-right-arrow-left"></i>
             </div>
-            
+
             <div class="dropdown-item to">
               <p>To</p>
               <div class="select-container">
-                <img src="https://flagsapi.com/IN/flat/64.png" alt="To country flag" />
+                <img
+                  src="https://flagsapi.com/IN/flat/64.png"
+                  alt="To country flag"
+                />
                 <select name="to" id="to-currency"></select>
               </div>
             </div>
           </div>
-          
+
           <div class="msg" id="exchange-message">Ready to convert</div>
-          
-          <button type="submit" id="get-rate-btn">
-            Get Exchange Rate
-          </button>
+
+          <button type="submit" id="get-rate-btn">Get Exchange Rate</button>
         </form>
       </main>
     </div>
-    
+
     <script src="codes.js"></script>
     <script src="app.js"></script>
   </body>
